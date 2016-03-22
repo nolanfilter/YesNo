@@ -9,6 +9,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 423376}
   - 114: {fileID: 11485622}
+  - 114: {fileID: 11412688}
+  - 114: {fileID: 11486884}
+  - 114: {fileID: 11497448}
   m_Layer: 0
   m_Name: Agents
   m_TagString: Untagged
@@ -28,6 +31,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &11412688
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83d46744ef43a4352bf436fbc2aa523f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screenPrefabs:
+  - {fileID: 151006, guid: fced2700fa0534172a662cf224470e25, type: 2}
+  - {fileID: 151006, guid: 76c6868fa899c4700924046b80a6d241, type: 2}
+  - {fileID: 151006, guid: 11e514c9daf9945418b903db673ddd29, type: 2}
+  - {fileID: 151006, guid: 8c8ff1b644a90459a9023c711c5e18f1, type: 2}
 --- !u!114 &11485622
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -40,7 +59,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  canvasPrefab: {fileID: 110310, guid: 8df0e0d9f983f4839a3909f4f6d04c3f, type: 2}
+  canvasPrefab: {fileID: 125198, guid: fca70f3ea41084fc5b282197fa036ecd, type: 2}
+--- !u!114 &11486884
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9028a3d360c144837a5c3e6db88460b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11497448
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dd98aa40ed004d05b033b2ce2770ac3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

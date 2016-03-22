@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GestureRecognizer : MonoBehaviour {
+public class HeadGestureRecognizer : MonoBehaviour {
 
     public enum GestureType
     {
@@ -19,8 +19,8 @@ public class GestureRecognizer : MonoBehaviour {
     public delegate void GestureEnded( GestureType type );
     public static event GestureEnded OnGestureEnded;
 
-    public delegate void GestureCancelled( GestureType type );
-    public static event GestureCancelled OnGestureCancelled;
+    //public delegate void GestureCancelled( GestureType type );
+    //public static event GestureCancelled OnGestureCancelled;
 
     public Transform target;
 
@@ -29,14 +29,14 @@ public class GestureRecognizer : MonoBehaviour {
 
     private float endThreshold = 0.5f;
     private float endTime = 0f;
-    private float endDuration = 0.1f;
+    private float endDuration = 0.15f;
 
     private Vector2 absoluteMovement = Vector2.zero;
 
     private bool gestureActive = false;
 
-    private static GestureRecognizer mInstance = null;
-    public static GestureRecognizer instance
+    private static HeadGestureRecognizer mInstance = null;
+    public static HeadGestureRecognizer instance
     {
         get
         {
@@ -48,7 +48,7 @@ public class GestureRecognizer : MonoBehaviour {
     {
         if( mInstance != null )
         {
-            Debug.LogError( string.Format( "Only one instance of GestureRecognizer allowed! Destroying:" + gameObject.name + ", Other:" + mInstance.gameObject.name ) );
+            Debug.LogError( string.Format( "Only one instance of HeadGestureRecognizer allowed! Destroying:" + gameObject.name + ", Other:" + mInstance.gameObject.name ) );
             Destroy( gameObject );
             return;
         }
