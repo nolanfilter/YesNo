@@ -139,4 +139,4 @@ Material:
       data:
         first:
           name: _CellSize
-        second: {r: 0.004690594, g: 0.0075, b: 0, a: 0}
+        second: {r: 0.0046859505, g: 0.0075, b: 0, a: 0}

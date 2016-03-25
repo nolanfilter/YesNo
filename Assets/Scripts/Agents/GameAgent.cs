@@ -109,34 +109,6 @@ public class GameAgent : MonoBehaviour {
         HeadGestureRecognizer.OnGestureEnded -= GestureEnded;
     }
 
-    void Update()
-    {
-        bool toggle = false;
-
-        if( Application.isEditor )
-        {
-            if( Input.GetKeyDown( KeyCode.Space ) )
-            {
-                toggle = true;
-            }
-        }
-        else
-        {
-            for( int i = 0; i < Input.touches.Length; i++ )
-            {
-                if( Input.touches[ i ].phase == TouchPhase.Began )
-                {
-                    toggle = true;
-                }
-            }
-        }
-
-        if( toggle )
-        {
-            Cardboard.SDK.VRModeEnabled = !Cardboard.SDK.VRModeEnabled;
-        }
-    }
-
     private void GestureBegan( HeadGestureRecognizer.GestureType type )
     {
         if( target )
