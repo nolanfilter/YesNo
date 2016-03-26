@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 using System.Collections;
 
-public class GameAgent : MonoBehaviour {
+public class YesNoAgent : MonoBehaviour {
 
     public enum Mode
     {
@@ -25,10 +24,10 @@ public class GameAgent : MonoBehaviour {
 
     private int score = 0;
     private int highScore = 0;
-    private string highScoreString = "highScore";
+    private string highScoreString = "yesNoHighScore";
 
-    private static GameAgent mInstance = null;
-    public static GameAgent instance
+    private static YesNoAgent mInstance = null;
+    public static YesNoAgent instance
     {
         get
         {
@@ -40,7 +39,7 @@ public class GameAgent : MonoBehaviour {
     {
         if( mInstance != null )
         {
-            Debug.LogError( string.Format( "Only one instance of GameAgent allowed! Destroying:" + gameObject.name + ", Other:" + mInstance.gameObject.name ) );
+            Debug.LogError( string.Format( "Only one instance of YesNoAgent allowed! Destroying:" + gameObject.name + ", Other:" + mInstance.gameObject.name ) );
             Destroy( gameObject );
             return;
         }

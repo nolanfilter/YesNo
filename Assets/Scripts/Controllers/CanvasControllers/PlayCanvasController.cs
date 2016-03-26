@@ -14,12 +14,12 @@ public class PlayCanvasController : MonoBehaviour {
     {
         if( descriptionText )
         {
-            descriptionText.text = GameAgent.GetMode().ToString().ToUpper() + "?";
+            descriptionText.text = YesNoAgent.GetMode().ToString().ToUpper() + "?";
         }
 
-        timerDuration = GameAgent.TimerBaseDuration;
+        timerDuration = YesNoAgent.TimerBaseDuration;
 
-        GameAgent.ResetScore();
+        YesNoAgent.ResetScore();
         UpdateContent();
     }
 
@@ -38,7 +38,7 @@ public class PlayCanvasController : MonoBehaviour {
         if( type == HeadGestureRecognizer.GestureType.Invalid )
             return;
 
-        if( GameAgent.GetMode() == GameAgent.Mode.Yes )
+        if( YesNoAgent.GetMode() == YesNoAgent.Mode.Yes )
         {
             if( ( type == HeadGestureRecognizer.GestureType.Nod && ContentAgent.GetIsCurrentContentPositive() )
                 || ( type == HeadGestureRecognizer.GestureType.Shake && !ContentAgent.GetIsCurrentContentPositive() ) )
@@ -81,9 +81,9 @@ public class PlayCanvasController : MonoBehaviour {
 
     private void Advance()
     {
-        timerDuration = Mathf.Clamp( timerDuration - GameAgent.TimerDecreaseAmount, GameAgent.TimerMinAmount, GameAgent.TimerBaseDuration );
+        timerDuration = Mathf.Clamp( timerDuration - YesNoAgent.TimerDecreaseAmount, YesNoAgent.TimerMinAmount, YesNoAgent.TimerBaseDuration );
 
-        GameAgent.IncrementScore();
+        YesNoAgent.IncrementScore();
         UpdateContent();
     }
 

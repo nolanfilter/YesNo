@@ -13,7 +13,7 @@ public class EndCanvasController : MonoBehaviour {
 
     void Awake()
     {
-        if( GameAgent.EvaluateScore() )
+        if( YesNoAgent.EvaluateScore() )
         {
             if( descriptionText )
             {
@@ -30,12 +30,12 @@ public class EndCanvasController : MonoBehaviour {
 
         if( scoreText )
         {
-            scoreText.text = "" + GameAgent.GetScore();
+            scoreText.text = "" + YesNoAgent.GetScore();
         }
 
         if( highScoreText )
         {
-            highScoreText.text = "" + GameAgent.GetHighScore();
+            highScoreText.text = "" + YesNoAgent.GetHighScore();
         }
 
         beginTime = Time.time;

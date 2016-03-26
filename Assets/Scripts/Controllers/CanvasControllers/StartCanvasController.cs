@@ -10,7 +10,7 @@ public class StartCanvasController : MonoBehaviour {
     {
         if( titleText )
         {
-            titleText.text = GameAgent.GetMode().ToString().ToUpper() + "?";
+            titleText.text = YesNoAgent.GetMode().ToString().ToUpper() + "?";
         }
     }
 

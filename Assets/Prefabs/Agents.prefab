@@ -8,10 +8,12 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 423376}
-  - 114: {fileID: 11485622}
+  - 114: {fileID: 11411510}
   - 114: {fileID: 11412688}
   - 114: {fileID: 11486884}
   - 114: {fileID: 11497448}
+  - 114: {fileID: 11409324}
+  - 114: {fileID: 11480390}
   m_Layer: 0
   m_Name: Agents
   m_TagString: Untagged
@@ -31,6 +33,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &11409324
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 910f472b9e21e4114b47a3f7b88435e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11411510
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 933b87241be6344d38542d5590873889, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenarioPrefabs:
+  - {fileID: 186496, guid: 882423b257d1148bda7d88f7917b0173, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &11412688
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47,19 +79,17 @@ MonoBehaviour:
   - {fileID: 151006, guid: 76c6868fa899c4700924046b80a6d241, type: 2}
   - {fileID: 151006, guid: 11e514c9daf9945418b903db673ddd29, type: 2}
   - {fileID: 151006, guid: 8c8ff1b644a90459a9023c711c5e18f1, type: 2}
---- !u!114 &11485622
+--- !u!114 &11480390
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 135444}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 933b87241be6344d38542d5590873889, type: 3}
+  m_Script: {fileID: 11500000, guid: 92552372f31d14637b6cef9476c64688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  canvasPrefab: {fileID: 125198, guid: fca70f3ea41084fc5b282197fa036ecd, type: 2}
 --- !u!114 &11486884
 MonoBehaviour:
   m_ObjectHideFlags: 1

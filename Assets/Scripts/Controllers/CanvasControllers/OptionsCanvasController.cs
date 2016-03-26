@@ -10,7 +10,7 @@ public class OptionsCanvasController : MonoBehaviour {
     {
         if( modeText )
         {
-            modeText.text = GameAgent.GetMode().ToString();
+            modeText.text = YesNoAgent.GetMode().ToString();
         }
     }
 
@@ -31,15 +31,15 @@ public class OptionsCanvasController : MonoBehaviour {
             case HeadGestureRecognizer.GestureType.Nod: ScreenAgent.ChangeToScreen( ScreenAgent.ScreenType.Start ); break;
             case HeadGestureRecognizer.GestureType.Shake:
             {
-                switch( GameAgent.GetMode() )
+                switch( YesNoAgent.GetMode() )
                 {
-                    case GameAgent.Mode.Yes: GameAgent.SetMode( GameAgent.Mode.No ); break;
-                    case GameAgent.Mode.No: GameAgent.SetMode( GameAgent.Mode.Yes ); break;
+                    case YesNoAgent.Mode.Yes: YesNoAgent.SetMode( YesNoAgent.Mode.No ); break;
+                    case YesNoAgent.Mode.No: YesNoAgent.SetMode( YesNoAgent.Mode.Yes ); break;
                 }
 
                 if( modeText )
                 {
-                        modeText.text = GameAgent.GetMode().ToString();
+                    modeText.text = YesNoAgent.GetMode().ToString();
                 }
             } break;
         }
