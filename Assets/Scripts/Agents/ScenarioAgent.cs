@@ -17,8 +17,13 @@ public class ScenarioAgent : MonoBehaviour {
     }
     private ScenarioType currentScenario = ScenarioType.Invalid;
 
+    public Transform target;
+
     public GameObject[] scenarioPrefabs;
     private GameObject currentScenarioObject = null;
+
+    public GameObject backCanvasPrefab;
+    private GameObject backCanvasObject;
 
     private static ScenarioAgent mInstance = null;
     public static ScenarioAgent instance
@@ -40,7 +45,20 @@ public class ScenarioAgent : MonoBehaviour {
 
         mInstance = this;
 
+        if( backCanvasPrefab )
+        {
+            backCanvasObject = Instantiate( backCanvasPrefab ) as GameObject;
+        }
+
         ChangeScenario( ScenarioType.Home );
+    }
+
+    public static Transform GetTarget()
+    {
+        if( instance )
+            return instance.target;
+
+        return null;
     }
 
     public static void ChangeScenario( ScenarioType newScenario )
@@ -63,8 +81,15 @@ public class ScenarioAgent : MonoBehaviour {
         if( scenarioIndex < scenarioPrefabs.Length && scenarioPrefabs[ scenarioIndex ] != null )
             currentScenarioObject = Instantiate( scenarioPrefabs[ scenarioIndex ] ) as GameObject;
 
+        bool isScenario = ( currentScenario != ScenarioType.Home && currentScenario != ScenarioType.Invalid );
+
         StopCoroutine( "SetCardboardEnabled" );
-        StartCoroutine( "SetCardboardEnabled", ( currentScenario != ScenarioType.Home && currentScenario != ScenarioType.Invalid ) );
+        StartCoroutine( "SetCardboardEnabled", isScenario );
+
+        if( backCanvasObject )
+        {
+            backCanvasObject.SetActive( isScenario );
+        }
     }
 
     private IEnumerator SetCardboardEnabled( bool enabled )

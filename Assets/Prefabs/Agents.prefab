@@ -55,14 +55,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 933b87241be6344d38542d5590873889, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
   scenarioPrefabs:
   - {fileID: 186496, guid: 882423b257d1148bda7d88f7917b0173, type: 2}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 131786, guid: 72b01389774544fbaacaf19d1eaf3c1e, type: 2}
+  - {fileID: 104424, guid: e9198650bc92b4cf48d594c2424ad9ee, type: 2}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  backCanvasPrefab: {fileID: 159798, guid: 12842064b03d040e1bd47d957b1da448, type: 2}
 --- !u!114 &11412688
 MonoBehaviour:
   m_ObjectHideFlags: 1

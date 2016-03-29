@@ -85,31 +85,12 @@ NavMeshSettings:
     cellSize: 0.16666666
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &677634525 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100000, guid: 1d50cc230c341074994f76337d1af082, type: 3}
-  m_PrefabInternal: {fileID: 2019121634}
---- !u!114 &677634526
+--- !u!114 &677634526 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 677634525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
+  m_PrefabParentObject: {fileID: 11484188, guid: e6918074531e44cc7b692bfa8ae9ad8e,
+    type: 2}
+  m_PrefabInternal: {fileID: 2019121634}
   m_Script: {fileID: 11500000, guid: fb521e9ace49d8546a83f420a0debd12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_strFileName: vampiroteuthis.mp4
-  m_TargetMaterial:
-  - {fileID: 677634525}
-  m_bFullScreen: 0
-  m_bSupportRockchip: 1
-  m_ScaleValue: 0
-  m_objResize: []
-  m_bLoop: 0
-  m_bAutoPlay: 1
-  m_bInit: 0
 --- !u!1 &1137904962
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,46 +197,38 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 400000, guid: 1d50cc230c341074994f76337d1af082, type: 3}
+    - target: {fileID: 448274, guid: e6918074531e44cc7b692bfa8ae9ad8e, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1d50cc230c341074994f76337d1af082, type: 3}
+    - target: {fileID: 448274, guid: e6918074531e44cc7b692bfa8ae9ad8e, type: 2}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1d50cc230c341074994f76337d1af082, type: 3}
+    - target: {fileID: 448274, guid: e6918074531e44cc7b692bfa8ae9ad8e, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1d50cc230c341074994f76337d1af082, type: 3}
+    - target: {fileID: 448274, guid: e6918074531e44cc7b692bfa8ae9ad8e, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1d50cc230c341074994f76337d1af082, type: 3}
+    - target: {fileID: 448274, guid: e6918074531e44cc7b692bfa8ae9ad8e, type: 2}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1d50cc230c341074994f76337d1af082, type: 3}
+    - target: {fileID: 448274, guid: e6918074531e44cc7b692bfa8ae9ad8e, type: 2}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1d50cc230c341074994f76337d1af082, type: 3}
+    - target: {fileID: 448274, guid: e6918074531e44cc7b692bfa8ae9ad8e, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1d50cc230c341074994f76337d1af082, type: 3}
+    - target: {fileID: 448274, guid: e6918074531e44cc7b692bfa8ae9ad8e, type: 2}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 1d50cc230c341074994f76337d1af082, type: 3}
-      propertyPath: m_Name
-      value: sphere
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 1d50cc230c341074994f76337d1af082, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 6f748ae57c6c13a4a935ce652be32129, type: 2}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1d50cc230c341074994f76337d1af082, type: 3}
+  m_ParentPrefab: {fileID: 100100000, guid: e6918074531e44cc7b692bfa8ae9ad8e, type: 2}
   m_IsPrefabParent: 0
