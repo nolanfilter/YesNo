@@ -30,7 +30,7 @@ public class TouchUpCallback : Callback {
 	}
 	
 	private void OnTouchUp( int fingerIndex, Vector2 fingerPos, float timeHeldDown )
-	{
+    {
 		if( Vector2.Distance( fingerPos, beginFingerPos ) > dragMinimumDistance )
 			return;
 		

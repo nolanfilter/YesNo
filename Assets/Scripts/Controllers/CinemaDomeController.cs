@@ -10,7 +10,7 @@ public class CinemaDomeController : MonoBehaviour {
     public Text domeAngleText;
     public DomeController domeController;
 
-    public GameObject canvasRootObject;
+    public GameObject screenCanvasObject;
 
     private int numDomeAngleTypes;
 
@@ -18,9 +18,9 @@ public class CinemaDomeController : MonoBehaviour {
     {
         numDomeAngleTypes = Enum.GetNames( typeof( DomeController.DomeAngle ) ).Length - 1;
 
-        if( canvasRootObject )
+        if( screenCanvasObject )
         {
-            canvasRootObject.transform.parent = null;
+            screenCanvasObject.transform.parent = null;
         }
 
         OnResetTouch();
@@ -46,7 +46,7 @@ public class CinemaDomeController : MonoBehaviour {
 
     void OnDestroy()
     {
-        Destroy( canvasRootObject );
+        Destroy( screenCanvasObject );
     }
 
     private void OnDomeAngleTouch()

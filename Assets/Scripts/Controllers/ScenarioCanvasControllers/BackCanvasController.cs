@@ -19,6 +19,8 @@ public class BackCanvasController : MonoBehaviour {
 
     private void OnBackTouch()
     {
+        Debug.Log( "Back called!" );
+
         ScenarioAgent.ChangeScenario( ScenarioAgent.ScenarioType.Home );
     }
 }

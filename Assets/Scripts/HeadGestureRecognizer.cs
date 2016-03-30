@@ -121,7 +121,7 @@ public class HeadGestureRecognizer : MonoBehaviour {
     {
         GestureType type = GestureType.Invalid;
 
-        if( Mathf.Abs( movement.x - movement.y ) > movement.magnitude * 0.75f )
+        if( Mathf.Abs( movement.x - movement.y ) > movement.magnitude * 0.5f )
         {
             if( movement.x > movement.y )
             {

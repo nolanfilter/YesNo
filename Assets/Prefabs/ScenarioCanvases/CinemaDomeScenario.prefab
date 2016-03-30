@@ -80,7 +80,7 @@ GameObject:
   - 114: {fileID: 11457688}
   - 114: {fileID: 11478422}
   m_Layer: 5
-  m_Name: SettingsCanvas
+  m_Name: ScreenCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -338,7 +338,7 @@ MonoBehaviour:
   domeAngleCallback: {fileID: 11437874}
   domeAngleText: {fileID: 11425596}
   domeController: {fileID: 11470042}
-  canvasRootObject: {fileID: 148062}
+  screenCanvasObject: {fileID: 148062}
 --- !u!114 &11496258
 MonoBehaviour:
   m_ObjectHideFlags: 1
