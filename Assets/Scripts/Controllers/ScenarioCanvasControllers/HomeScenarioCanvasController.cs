@@ -16,7 +16,7 @@ public class HomeScenarioCanvasController : MonoBehaviour {
             yesNoCallback.OnAreaTouch += OnYesNoTouch;
 
         if( yesNothingCallback != null )
-            yesNothingCallback.OnAreaTouch += OnYesNoTouch;
+            yesNothingCallback.OnAreaTouch += OnYesNothingTouch;
 
         if( mediaGalleryCallback != null )
             mediaGalleryCallback.OnAreaTouch += OnMediaGalleryTouch;
@@ -37,7 +37,7 @@ public class HomeScenarioCanvasController : MonoBehaviour {
             yesNoCallback.OnAreaTouch -= OnYesNoTouch;
 
         if( yesNothingCallback != null )
-            yesNothingCallback.OnAreaTouch -= OnYesNoTouch;
+            yesNothingCallback.OnAreaTouch -= OnYesNothingTouch;
 
         if( mediaGalleryCallback != null )
             mediaGalleryCallback.OnAreaTouch -= OnMediaGalleryTouch;
